@@ -41,10 +41,8 @@ playGame = async () => {
       currentPlayer = getPlayer(currentPlayer);
       return null;
     }
-    
-    // Write your code that lets two people play tic tac toe 
-    // you might need to implement your own functions  
 }
+
 checkForEmptyCells = () => {
   for(let row of board){
     for(let val of row) {
@@ -54,6 +52,7 @@ checkForEmptyCells = () => {
 
   return false;
 }
+
 checkForConsecutiveChar = (arr) => {
   const char = arr[0];
   if(char  === 'N') return false;
